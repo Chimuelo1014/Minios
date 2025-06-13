@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lista de Tareas</title>
+    <style>
+        /* Aquí irá el CSS para la lista de tareas */
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0f2f7;
+            margin: 0;
+        }
+        .todo-app {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            width: 400px;
+            max-width: 90%;
+        }
+        .todo-app h1 {
+            color: #263238;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .task-list li {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            color: #455a64;
+            position: relative; /* Para la línea de tachado */
+        }
+        .task-list li.completed {
+            background-color: #e8f5e9;
+            color: #66bb6a;
+            text-decoration: line-through; /* Esto tachará el texto */
+            opacity: 0.7;
+        }
+        /* Para simular un checkbox visualmente si se quisiera */
+        .task-list li::before {
+            content: '☐'; /* Cuadrado vacío */
+            font-size: 1.2em;
+            margin-right: 15px;
+            color: #90a4ae;
+        }
+        .task-list li.completed::before {
+            content: '☑'; /* Cuadrado marcado */
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-app">
+        <h1>Mi Lista de Tareas</h1>
+        <ul class="task-list">
+            <li>Comprar víveres</li>
+            <li class="completed">Enviar correo importante</li>
+            <li>Programar reunión</li>
+            <li>Leer libro de CSS</li>
+            <li class="completed">Hacer ejercicio</li>
+        </ul>
+    </div>
+</body>
+</html>

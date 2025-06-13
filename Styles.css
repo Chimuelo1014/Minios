@@ -1,0 +1,119 @@
+linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E"); /* Flecha SVG para el select */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav #app-selector:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos del contenido principal */
+.mini-os-main-content {
+    flex-grow: 1; /* Ocupa todo el espacio restante */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header-bg);
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-header h1 {
+    font-size: 2.2em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1.1em;
+    color: #666666;
+}
+
+/* Estilos de la "ventana" de la aplicación */
+.app-window {
+    flex-grow: 1; /* Permite que la ventana ocupe el espacio restante */
+    border: 1px solid var(--border-color);
+    background-color: var(--app-content-bg);
+    border-radius: 6px;
+    overflow: hidden; /* Importante para el iframe dentro */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.window-title-bar {
+    background-color: var(--window-title-bar-bg);
+    color: var(--window-title-bar-text);
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    border-bottom: 1px solid #666666;
+}
+
+.window-title {
+    font-weight: bold;
+}
+
+.window-controls span {
+    margin-left: 10px;
+    cursor: default; /* Simula un cursor, pero no hay funcionalidad */
+    font-weight: bold;
+}
+
+.window-controls .close {
+    color: #ff6b6b; /* Un color rojo para la "X" */
+}
+
+.window-content {
+    flex-grow: 1; /* Asegura que el contenido ocupe el resto del espacio */
+    padding: 0; /* Sin padding en el contenedor del iframe */
+}
+
+.mini-os-iframe {
+    width: 100%;
+    height: 100%; /* Ocupa el 100% del contenedor de la ventana */
+    border: none; /* Eliminar el borde del iframe */
+    background-color: var(--app-content-bg);
+}
+
+/* Estilos para las aplicaciones individuales (ej. apps/note.html, homeworks.html, weather.html)
+   Deberías poner esto en un <style> dentro de cada archivo de app,
+   o crear un styles/app_common.css y vincularlo en cada app.
+*/
+/* Ejemplo de estilos internos en apps/note.html para que no sea tan básico:
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fefefe;
+    color: #333;
+}
+h2 {
+    color: #007bff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+textarea {
+    width: calc(100% - 20px); /* Ajuste para el padding si lo añades */
+    height: 250px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+*/

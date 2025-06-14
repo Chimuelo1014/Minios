@@ -4,62 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Clima</title>
-    <style>
-        /* Aquí irá el CSS para la tarjeta del clima */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #eceff1;
-            margin: 0;
-        }
-        .weather-card {
-            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Un gradiente para el cielo */
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            padding: 30px;
-            text-align: center;
-            width: 300px;
-        }
-        .weather-card h2 {
-            margin-top: 0;
-            font-size: 2.5em;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        }
-        .weather-icon {
-            font-size: 5em; /* Puedes usar emojis o iconos de fuentes aquí */
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .temperature {
-            font-size: 4em;
-            font-weight: bold;
-            margin: 10px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .description {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        }
-        .details {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        .details p {
-            margin: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/clima.css">
+   
 </head>
 <body>
-    <div class="weather-card">
+    <div class="weather__card">
         <h2>Medellín</h2>
-        <div class="weather-icon">☀️</div> <div class="temperature">28°C</div>
-        <div class="description">Soleado con algunas nubes</div>
-        <div class="details">
+        <div class="weather__icon">☀️</div> <div class="temperature">28°C</div>
+        <div class="wather__description">Soleado con algunas nubes</div>
+        <div class="weather__details">
             <p>Humedad: 75%</p>
             <p>Viento: 10 km/h</p>
             <p>Sensación: 29°C</p>
